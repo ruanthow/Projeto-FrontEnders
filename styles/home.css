@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+.fundoinicial{
+    height: 864px;
+    background-image: linear-gradient(180deg, #000000 0%, #000000 35.42%, #1e1c1c 55.21%, #000000 71.35%, #000000 100%);
+}
+.textColor1{
+    color: white;
+}
+.textColor1:hover{
+    color: gold;
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
