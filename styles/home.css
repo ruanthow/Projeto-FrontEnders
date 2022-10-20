@@ -79,5 +79,16 @@ a{
 #footer2 img{
     height: 30px;
     width: 30px;
-    margin-right: 10px;
+    margin-right: 10px;}
+    
+.nav-submenu-login{
+    padding-right: 10px;
+    margin-right: 16px;
+    border-right: 1px solid white ;
+    
+}
+.nav-submenu-login img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
