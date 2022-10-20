@@ -81,7 +81,41 @@ body{
 
 .secondSection{
     height: 300px;
-    background-color: white;
+    background-color: black;
+    border-top: 2px solid grey;
+    display: flex;
+    align-items: center;
+
+
+}
+.secondSectionContainer{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.titleDiv{
+    width: 50%;
+}
+.pDiv{
+    width: 50%;
+
+}
+.titleDiv h2{
+    color: goldenrod;
+    font-size: 60px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    letter-spacing: 3px;
+}
+.pDiv p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+
 }
 
 
