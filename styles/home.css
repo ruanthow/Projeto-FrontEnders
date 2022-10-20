@@ -1,22 +1,21 @@
 body{
     background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .fundoinicial{
-    height: 864px;
-    background-image: linear-gradient(180deg, #000000 0%, #000000 35.42%, #1e1c1c 55.21%, #000000 71.35%, #000000 100%);
+    height: 600px;
+    background-image: linear-gradient(180deg, #000000 0%, #000000 35.42%, #171717 55.21%, #000000 71.35%, #000000 100%);
 }
 .textColor1{
     color: white;
+    font-family: 'Inconsolata', monospace;
 }
 .textColor1:hover{
     color: gold;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1.5s;
-}
-.container-fluid{
-    display: flex;
-    justify-content: space-between;
 }
 .nav-submenu-login{
     padding-right: 10px;
@@ -29,3 +28,139 @@ body{
     height: 20px;
     margin-right: 8px;
 }
+
+
+/* Section 1 Style */
+
+.sectionPrincipal{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.productAndInfo{
+    width: 430px;
+    text-align: center;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+.productAndInfo h1{
+    color: goldenrod;
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.247);
+}
+.productAndInfo h3, h4{
+    color: white;
+    font-size: 20px;
+}
+.imgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productAndInfo img{
+    height: 300px;
+    object-fit: cover;
+}
+.buttons1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttons1 p {
+    color: goldenrod;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.buttons1 p:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 1.5s;
+}
+/* Section 2 Style */
+
+.secondSection{
+    height: 300px;
+    background-color: white;
+}
+
+
+/* Footer CSS */
+
+footer{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+    height: 250px;
+    border-top: 2px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer1{
+    display: flex;
+    flex-direction: column;
+
+}
+#footer1 h2{
+    font-size: 20px;
+    color: white;
+}
+#footer1 h3:visited{
+    color: white;
+    text-decoration: none;
+}
+#footer1 h3:hover{
+    color: white;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+#footer1 h3{
+    font-size: 12px;
+    color: white;
+}
+
+#footer2{
+    width: 30%;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#footer2 h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.footerImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#footer2 img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;}
+
+/* Media Style */
+
+    @media  screen and (max-width:1000px) {
+
+        .nav-submenu{
+            display: none !important;
+        }
+        .collapse navbar-collapse{
+            display: flex;
+            justify-content: end;
+        }
+        .productAndInfo img{
+            height: 200px;
+            object-fit: cover;
+        }
+        
+    }
