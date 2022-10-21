@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="./styles/team.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;500;600;700&display=swap');
@@ -18,7 +18,9 @@
     <header>
         <nav class="navbar navbar-expand-lg fixed-top bg-transparent navbar-white">
           <div class="container-fluid">
-            <a class="navbar-brand text-white" style="width:183px;" href="#">Logo</a>
+            <a class="navbar-brand text-white" style="width:183px;" href="index.html">
+              <img id="logo" src="imgs/iconSpokebuds.png" alt="Ícone Spoke">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon bg-warning"></span>
@@ -51,44 +53,59 @@
       <main>
         <section class="mainSection">
             <div class="title">
-                <h1>SpokeTeam</h1>
+                <h1>Spoke Team</h1>
             </div>
             <div class="team1">
                 <div class="dev" id="dev1">
-                    <div class="cardFront"></div>
+                    <div class="cardFront">
+                      <img src="./imgs/ruan.png" alt="Foto do">
+                    </div>
                     <div class="cardBack">
-                        <h3>Dev 1</h3>
-                        <p>responsável pela página tal</p>
+                        <h3>Ruan</h3>
+                        <h4>Co-facilitador</h4>
+                        <h6>responsável pela página <em>Services</em>.</h6>
                     </div>
                 </div>
                 <div class="dev" id="dev2">
-                    <div class="cardFront"></div>
-                    <div class="cardBack">
-                        <h3>Dev 2</h3>
-                        <p>responsável pela página tal</p>
+                    <div class="cardFront">
+                      <img src="./imgs/" alt="Fota da Mariana">
                     </div>
-                </div>
-            </div>
-            <div class="team2">
-                <div class="dev" id="dev3">
-                    <div class="cardFront"></div>
                     <div class="cardBack">
-                        <h3>Dev 3</h3>
-                        <p>responsável pela página tal</p>
+                      <h3>Mariana</h3>
+                      <h4>Gestora de Conhecimento</h4>
+                      <h6>responsável pela página <em>Login</em>.</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="team2">
+                  <div class="dev" id="dev3">
+                    <div class="cardFront">
+                      <img src="./imgs/fabricio.png" alt="Foto do Fabrício">
+                    </div>
+                    <div class="cardBack">
+                      <h3>Fabricio</h3>
+                      <h4>Gestor de engajamento</h4>
+                      <h6>responsável pela página <em>Team</em>.</h6>
                     </div>
                 </div>
                 <div class="dev" id="dev4">
-                    <div class="cardFront"></div>
+                    <div class="cardFront">
+                      <img src="./imgs/andrew.png" alt="Foto do Andrew">
+                    </div>
                     <div class="cardBack">
-                        <h3>Dev 4</h3>
-                        <p>responsável pela página tal</p>
+                      <h3>Andrew</h3>
+                      <h4>Colaborador Alpha</h4>
+                      <h6>responsável pela página <em>Sign-up</em>.</h6>
                     </div>
                 </div>
                 <div class="dev" id="dev5">
-                    <div class="cardFront"></div>
+                    <div class="cardFront">
+                      <img src="./imgs/" alt="Foto do Wesley">
+                    </div>
                     <div class="cardBack">
-                        <h3>Dev 5</h3>
-                        <p>responsável pela página tal</p>
+                      <h3>Wesley</h3>
+                      <h4>Colaborador Ômega</h4>
+                      <h6>responsável pela página <em>Recovery password</em>.</h6>
                     </div>
                 </div>
             </div>
@@ -110,7 +127,7 @@
           <a href="#">
             <h3>Login</h3>
           </a>
-          <a href="#">
+          <a href="">
               <h3>Cadastre-se</h3>
             </a>
         </div>

@@ -23,6 +23,11 @@ body{
 /* end global */
 
 /* start nav */
+header .navbar-brand img{
+    width: 50px;
+    height: 50px;
+}
+
 .nav-submenu-login{
     padding-right: 10px;
     margin-right: 16px;
@@ -42,7 +47,7 @@ main .mainSection{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 main .title{
@@ -61,50 +66,163 @@ main h1{
 main .team1{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin: 50px 3% 50px 2%;
+    margin: 50px 15% 50px 15%;
 }
 
 main .team2{
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin: 10px 5.5% 50px 2%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 2% 50px 2%;
 }
 
 main .dev{
     display: flex;
+    margin: 0px 0px;
+}
+
+main .dev img{
+    height: 220px;
+    width: 220px;
+}
+
+main .dev h3{
+    text-decoration: underline;
 }
 
 main .cardFront{
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
     border-radius: 50%;
     background-color: white;
 }
 
 main .cardBack{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: black;
     text-align: center;
-    height: 200px;
-    width: 200px;
-    padding: 2%;
-    /* margin: 1% 0 0 2%; */
+    height: 220px;
+    width: 220px;
+    padding: 0 20px 0 30px;
+    margin: 10px 0 0 10px;
     border-radius: 50%;
     background-color: goldenrod;
-    /* position: absolute; */
+    position: absolute;
     z-index: -1;
 }
 
-main .dev:hover{
-    cursor: pointer;
-    position: static;
+main .dev:hover .cardFront{
+    margin: 0 160px 0 0;
+    animation: slideL 0.2s;
+}
+
+main .dev:hover .cardBack{
+    margin: 20px 0 0 180px;
+    padding: 0 20px 0 30px;
+    animation: slideR 0.2s;
 }
 /* end main */
+
+@media  screen and (max-width:1080px) {
+    
+    .nav-submenu{
+        display: none !important;
+    }
+    .collapse navbar-collapse{
+        display: flex;
+        justify-content: end;
+    }
+    .productAndInfo img{
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    main .team2{
+        margin: 0 15% 50px 15%;
+    }
+    
+    main #dev5{
+        margin: 50px 50%;
+    }
+    
+}
+
+@media  screen and (max-width:880px) {
+    
+    main .team1{
+        margin: 50px 15% 0 15%;
+    }
+
+    main .cardBack{
+        margin: 20px 0 0 0;
+        padding: 10px 5px 0 5px;
+    }
+    
+    main .dev{
+        margin: 20px 50%;
+    }
+
+    main #dev5{
+        margin: 20px 50%;
+    }
+
+    main .dev:hover .cardBack{
+        margin: 180px 0 0 0;
+        padding: 10px 5px 0 5px;
+        animation: slideD 0.2s;
+    }
+    
+    main .dev:hover .cardFront{
+        margin: 0 0 180px 0;
+        animation: slideU 0.2s;
+    }
+}
+
+@keyframes slideR{
+    0%{
+        margin: 10px 0 0 50px;
+    }
+        
+    100%{
+        margin: 20px 0 0 180px;
+    }
+}
+    
+@keyframes slideL{
+    0%{
+        margin: 0 50px 0 0;
+    }
+
+    100%{
+        margin: 0 160px 0 0;
+    }
+}
+
+@keyframes slideD{
+    0%{
+        margin: 60px 0 0 0;
+    }
+
+    100%{
+        margin: 170px 0 0 0;
+    }
+}
+
+@keyframes slideU{
+    0%{
+        margin: 0 0 60px 0;
+    }
+
+    100%{
+        margin: 0 0 170px 0;
+    }
+}
 
 /* start footer */
 footer{
@@ -121,8 +239,9 @@ footer{
 
 #footer1{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
-
+    
 }
 
 #footer1 h2{
