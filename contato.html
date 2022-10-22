@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-transparent navbar-white">
+        <nav class="navbar navbar-expand-lg fixed-top bg-black navbar-white">
           <div class="container-fluid">
             <a class="navbar-brand text-white" style="width:183px;" href="#">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -45,23 +45,33 @@
 <!-- PRINCIPAL -->
       <main>
          <form action="">
-             <h3>CADASTRO</h3><br>
+             <div class="title">
+              <section>Cadastre-se</section>
+             </div>
 
-             <section>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-             </section>
-               
-             <section>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-             </section>
+             <div class="allInputs">
+
+              <section class="fiveInputs">
+                <input type="text" name="" id="" placeholder="NOME COMPLETO">
+                <input type="password" name="" id="" placeholder="SENHA">
+                <input type="number" name="" id="" placeholder="REGISTRO GERAL (RG)">
+                <input type="text" name="" id="" placeholder="LOGADOURO">
+                <input type="text" name="" id="" placeholder="LOCALIDADE">
+              </section>
+
+              <section class="fiveInputs">
+                <input type="email" name="" id="" placeholder="E-MAIL">
+                <input type="password" name="" id="" placeholder="CONFIRME SUA SENHA">
+                <input type="number" name="" id="" placeholder="CEP">
+                <input type="text" name="" id="" placeholder="BAIRRO">
+                <input type="text" name="" id="" placeholder="UF">
+              </section>
+
+             </div>
+
+             <div class="btn0">
+              <input type="submit" value="FINALIZAR!!" id="btnSubmit">
+             </div>
 
          </form>
       </main>
