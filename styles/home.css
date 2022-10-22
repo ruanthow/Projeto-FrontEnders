@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: black;
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100%;
+   
 }
 
 .fundoinicial{
