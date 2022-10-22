@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background: black ;
+    width: 100%;
+    overflow-x: hidden;
+   
+}
+
+/* NavBar */
+
+.textColor1{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+.textColor1:hover{
+    color: gold;
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+.nav-submenu-login{
+    padding-right: 10px;
+    margin-right: 16px;
+    border-right: 1px solid white ;
+    
+}
+.nav-submenu-login img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+
+/* Main */
+.fristSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+.areaIntro h1{
+    font-size: 75pt;
+    color: #FDBA12;
+    text-shadow: 0px 4px 4px rgba(243, 199, 4, 0.849);
+    
+}
+.areaIntro2 h1{
+    color: white;
+}
+/*CARROSEUL 1*/
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 247, 247, 0) 100%);;
+}
+.content h1{
+    position: absolute;
+    font-size: 45pt;
+    left: 36%;
+    color: white;
+}
+.bgGirlModel{
+    height: 100%;
+}
+.bgImgFoneAxe{
+    background: linear-gradient(180deg, #292929 0%, rgba(81, 81, 81, 0) 100%);
+    position: relative;
+    height: 500px;
+    width: 100%;
+}
+.bgImgFoneAxe img{
+    position: absolute;
+    top: -20%;
+    left: 20%;
+   
+}
+.bgImgFoneSquare{
+    background: linear-gradient(180deg, #292929 0%, rgba(81, 81, 81, 0) 100%);
+    height: 500px;
+    width: 100%;
+}
+.bgImgFoneSquare img{
+    width: 100%;
+}
+.bgManModel{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+.bgManModel img{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.bgmanModel2{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+.bgImgfoneRunner{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #292929 0%, rgba(81, 81, 81, 0) 100%);
+    height: 500px;
+    width: 100%;
+}
+/*CARROSEUL 2*/
+.content2{
+    height: 100vh;
+    background: linear-gradient(180deg, #222222 0%, rgba(255, 253, 253, 0.42) 100%);
+}
+.content2 h1{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 120px;
+    font-size: 45pt;
+}
+.containerContent{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.13) 100%);
+    height: 900px;
+    width: 100%;
+}
+.squareColor1, .squareColor2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60%;
+}
+.squareColor1{
+    margin-right: -500px;
+    opacity: 0;
+}
+.squareColor2{
+    margin-left: -500px;
+    opacity: 0;
+}
+.squareColor1 h3, .squareColor2 h3{
+    color: white;
+}
+.squareProduct{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.squareProduct img{
+    margin-top: -88px;
+}
+.squareProduct h2{
+    color: white;
+    font-size: 40pt;
+    text-align: center;
+    margin-top: -50px;
+}
+.squareProduct p{
+    width: 70%;
+    color: white;
+    opacity: 0.65;
+    text-align: center;
+}
+.squareProduct button{
+    height: 55px;
+    width: 200px;
+    border-radius: 50px;
+    background: #FDBA12;
+    border: none;
+
+    font-weight: 600;
+    font-size: 16pt;
+    color: white;
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.35);
+}
+/* Footer CSS */
+
+footer{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+    height: 250px;
+    border-top: 2px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer1{
+    display: flex;
+    flex-direction: column;
+
+}
+#footer1 h2{
+    font-size: 20px;
+    color: white;
+}
+#footer1 h3:visited{
+    color: white;
+    text-decoration: none;
+}
+#footer1 h3:hover{
+    color: white;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+#footer1 h3{
+    font-size: 12px;
+    color: white;
+}
+
+#footer2{
+    width: 30%;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#footer2 h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.footerImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#footer2 img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;}
+
+/* Media Style */
+
+    @media  screen and (max-width:1000px) {
+        
+        .nav-submenu{
+            display: none !important;
+        }
+        .collapse navbar-collapse{
+            display: flex;
+            justify-content: end;
+        }
+        .productAndInfo img{
+            height: 200px;
+            object-fit: cover;
+        }
+        
+    }
