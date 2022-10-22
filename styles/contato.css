@@ -70,7 +70,10 @@ form{
     padding: 5px;
 }
 input{
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px 5px 8px 5px;
     margin-top: 25px;
     width: 25vw;
     height: 5vh;
@@ -85,7 +88,7 @@ input{
     font-family: 'Oswald', sans-serif;
     font-size: 10pt;
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
 }
 ::placeholder{
     color: rgba(0, 0, 0, 0.356);
@@ -93,10 +96,9 @@ input{
     font-size: 7pt;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
 }
 .allInputs{
-    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -106,14 +108,15 @@ input{
     flex-direction: column;
 }
 .btn0{
-    margin-top: 15px;
+    padding: 5px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 #btnSubmit{
     margin-top: 0;
-    width: 15vw;
+    width: 10vw;
     background: #ffdc96;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -126,7 +129,7 @@ input{
     box-shadow: 0 0 ;
 }
 #btnSubmit:hover{
-    width: 16vw;
+    width: 13vw;
     height: 6vh;
     font-size: 11pt;
     font-weight: bold;
