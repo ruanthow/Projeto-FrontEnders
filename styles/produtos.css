@@ -126,56 +126,58 @@ body{
 .content2 h1{
     text-align: center;
     color: white;
-    padding-top: 30px;
-    margin-bottom: 120px;
+    margin-bottom: 130px;
     font-size: 45pt;
 }
-.containerContent{
+.containerContent, .containerContent2, .containerContent3{
     display: grid;
     grid-template-columns: 25% 50% 25%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.13) 100%);
     height: 900px;
     width: 100%;
 }
-.squareColor1, .squareColor2{
+.squareColor1, .squareColor2, .axeColor1, .axeColor2, .runnerColor1, .runnerColor2{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 60%;
 }
-.squareColor1{
+.squareColor1, .axeColor1, .runnerColor1{
     margin-right: -500px;
     opacity: 0;
 }
-.squareColor2{
+.squareColor2, .axeColor2, .runnerColor2{
     margin-left: -500px;
     opacity: 0;
 }
-.squareColor1 h3, .squareColor2 h3{
+.squareColor1 h3, .squareColor2 h3, .axeColor1 h3, .axeColor2 h3, .runnerColor1 h3, .runnerColor2 h3{
     color: white;
 }
-.squareProduct{
+.squareProduct, .axeProduct, .runnerProduct{
     display: flex;
     align-items: center;
     flex-direction: column;
     
 }
-.squareProduct img{
+.squareProduct img, .axeProduct img{
     margin-top: -88px;
 }
-.squareProduct h2{
+.runnerProduct img{
+    margin-top: -35px;
+}
+.squareProduct h2, .axeProduct h2, .runnerProduct h2{
     color: white;
     font-size: 40pt;
     text-align: center;
     margin-top: -50px;
 }
-.squareProduct p{
+.squareProduct p, .axeProduct p, .runnerProduct p{
     width: 70%;
     color: white;
     opacity: 0.65;
     text-align: center;
 }
-.squareProduct button{
+.squareProduct button, .axeProduct button, .runnerProduct button{
     height: 55px;
     width: 200px;
     border-radius: 50px;
@@ -187,6 +189,10 @@ body{
     color: white;
     box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.35);
 }
+.axeColor1, .axeColor2, .runnerColor1, .runnerColor2{
+    margin-top: 30%;
+}
+
 /* Footer CSS */
 
 footer{
