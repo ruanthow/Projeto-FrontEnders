@@ -14,7 +14,7 @@ body{
     font-family: 'Inconsolata', monospace;
 }
 .textColor1:hover{
-    color: gold;
+    color: #ffd700;
     transform: scale(1.1);
     transition: 1.5s;
 }
@@ -118,6 +118,22 @@ body{
 
 }
 
+.gradient {
+    background: linear-gradient(to bottom, rgba(210,150,0,1) 0%, rgba(255,215,0,1) 35%, rgb(241, 223, 140) 52%, rgba(255,215,0,1) 65%, rgba(210,150,0,1) 86%);
+    color: rgb(255, 255, 255);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+.gradientSide {
+    background: linear-gradient(90deg, rgba(210,150,0,1) 0%, rgba(255,215,0,1) 35%, rgb(240, 217, 114) 52%, rgba(255,215,0,1) 65%, rgba(210,150,0,1) 86%);
+    color: rgb(255, 255, 255);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
 
 /* Footer CSS */
 
