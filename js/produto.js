@@ -7,10 +7,13 @@ containerContent3  = document.querySelector(".containerContent3");
 
 squareColor1 = document.querySelector(".squareColor1");
 squareColor2 = document.querySelector(".squareColor2");
+
 axeColor1 = document.querySelector(".axeColor1");
 axeColor2 = document.querySelector(".axeColor2");
+
 runnerColor1 = document.querySelector(".runnerColor1");
 runnerColor2 = document.querySelector(".runnerColor2");
+
 
 
 let effectSliderShowIsTrue = false; 
@@ -29,8 +32,7 @@ setInterval(()=>{
 })
 
 function teste(){
-    var a = window.scrollY
-    return console.log(a);
+    
 }
 
 function effectSliderShow(){
@@ -68,7 +70,7 @@ function effectSliderShow(){
 
 }
    
-document.addEventListener('scroll', teste)
+
 containerContent.addEventListener('mouseover', effectSliderShow)
 containerContent2.addEventListener('mouseover', effectSliderShow)
 containerContent3.addEventListener('mouseover', effectSliderShow)

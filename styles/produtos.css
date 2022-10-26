@@ -56,7 +56,7 @@ body{
     color: white;
 }
 /*CARROSEUL 1*/
-.content{
+.carouselAreaIntro, .carouselAreaIntro2, .carouselAreaIntro3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
@@ -66,7 +66,7 @@ body{
     position: relative;
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 247, 247, 0) 100%);;
 }
-.content h1{
+.carouselAreaIntro h1 , .carouselAreaIntro2 h1, .carouselAreaIntro3 h1{
     position: absolute;
     font-size: 45pt;
     left: 36%;
@@ -257,18 +257,77 @@ a{
 
 /* Media Style */
 
-    @media  screen and (max-width:1000px) {
+    @media  screen and (max-width:1024px) {
         
+        .bgImgFoneAxe img {
+            width: 450px;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+        .bgImgFoneSquare{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bgImgFoneSquare img{
+            height: 400px;
+            width: 650px;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+        .squareProduct img{
+            width: 450px;
+        }
+        .axeProduct img, .runnerProduct img{
+            width: 300px;
+            margin-bottom: 32px;
+        }
+        .axeColor1 img, .axeColor2 img, .squareColor1 img, .squareColor2 img{
+            width: 250px;
+        }
+        .axeColor1 h3, .axeColor2 h3, .squareColor1 h3, .squareColor2 h3, .runnerColor1 h3, .runnerColor2 h3{
+            font-size: 16pt;
+        }
+        
+    }
+    @media  screen and (max-width:425px){
+        .carouselAreaIntro, .carouselAreaIntro2, .carouselAreaIntro3{
+            display: none !important;
+        }
+        .bgMobile{
+            background: url('../assets/img/bgMobile1.svg');
+            height: 250px;
+            background-size: 450px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .bgMobile2{
+            background: url('../assets/img/bgMobile2.svg');
+            height: 250px;
+            background-size: 450px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .bgMobile3{
+            background: url('../assets/img/bgMobile3.svg');
+            height: 250px;
+            background-size: 450px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
         .nav-submenu{
             display: none !important;
         }
-        .collapse navbar-collapse{
-            display: flex;
-            justify-content: end;
+        .fristSection{
+            grid-template-columns: 1fr;
         }
-        .productAndInfo img{
-            height: 200px;
-            object-fit: cover;
+        .areaIntro h1{
+            font-size: 55pt;
+        }
+        .areaIntro img{
+            width: 300px;
         }
         
     }
