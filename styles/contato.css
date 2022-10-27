@@ -89,7 +89,8 @@ input{
     font-style: normal;
 }
 ::placeholder{
-    color: rgba(0, 0, 0, 0.356);
+    /* color: rgba(0, 0, 0, 0.356); */
+    color: rgba(0, 0, 0, 0.452);
     text-align: center;
     font-size: 7pt;
     font-family: 'Oswald', sans-serif;
@@ -210,5 +211,12 @@ a{
     }
 
     @media screen and (max-width:425px){
-        
+        input{
+            width: 30vw;
+            height: 4vh;   
+        }
+        #btnSubmit{
+            width: 20vw ;
+            height: 4vh ;
+        }
     }
