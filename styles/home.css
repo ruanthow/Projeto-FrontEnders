@@ -42,6 +42,8 @@ body{
     width: 430px;
     text-align: center;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    animation-duration: 5s;
+    animation-name: fadeIn;
 }
 .productAndInfo h1{
     color: goldenrod;
@@ -213,4 +215,14 @@ a{
             object-fit: cover;
         }
         
+    }
+
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0%;
+        }
+        to{
+            opacity: 100%;
+        }
     }
