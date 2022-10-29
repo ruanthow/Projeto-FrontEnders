@@ -260,7 +260,7 @@ a{
     @media  screen and (max-width:1024px) {
         
         .bgImgFoneAxe img {
-            width: 450px;
+            height: 500px;
             position: relative;
             top: 0;
             right: 0;
