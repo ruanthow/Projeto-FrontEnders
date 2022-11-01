@@ -7,8 +7,9 @@
 body{
     background-color: black;
     width: 100%;
-   
+    overflow-x: hidden;
 }
+
 
 .fundoinicial{
     height: 600px;
@@ -19,7 +20,7 @@ body{
     font-family: 'Inconsolata', monospace;
 }
 .textColor1:hover{
-    color: gold;
+    color: #ffd700;
     transform: scale(1.1);
     transition: 1.5s;
 }
@@ -44,18 +45,21 @@ body{
     margin-top: 150px;
 }
 .productAndInfo{
-    width: 430px;
+    width: 80%;
     text-align: center;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    animation-duration: 5s;
+    animation-name: fadeIn;
 }
 .productAndInfo h1{
     color: goldenrod;
-    font-size: 70px;
+    font-size: 80px;
     letter-spacing: 2px;
     font-weight: 600;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.247);
 }
 .productAndInfo h3, h4{
+    margin: 0 auto;
+    width: 35%;
     color: white;
     font-size: 20px;
 }
@@ -74,7 +78,7 @@ body{
     justify-content: center;
 }
 .buttons1 p {
-    color: goldenrod;
+    color: gold;
     padding-right: 10px;
     padding-top: 10px;
 }
@@ -87,9 +91,59 @@ body{
 
 .secondSection{
     height: 300px;
-    background-color: white;
+    background-color: black;
+    border-top: 2px solid grey;
+    display: flex;
+    align-items: center;
+
+
+}
+.secondSectionContainer{
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.titleDiv{
+    width: 60%;
+}
+.pDiv{
+    width: 40%;
+
+}
+.titleDiv h2{
+    color: goldenrod;
+    font-size: 60px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    letter-spacing: 3px;
+}
+.pDiv p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    letter-spacing: 1px;
+
 }
 
+.gradient {
+    background: linear-gradient(to bottom, rgba(210,150,0,1) 0%, rgba(255,215,0,1) 35%, rgb(241, 223, 140) 52%, rgba(255,215,0,1) 65%, rgba(210,150,0,1) 86%);
+    color: rgb(255, 255, 255);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+.gradientSide {
+    background: linear-gradient(90deg, rgba(210,150,0,1) 0%, rgba(255,215,0,1) 35%, rgb(240, 217, 114) 52%, rgba(255,215,0,1) 65%, rgba(210,150,0,1) 86%);
+    color: rgb(255, 255, 255);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
 
 /* Footer CSS */
 
@@ -97,14 +151,16 @@ footer{
     color: white;
     font-family: 'Inconsolata', monospace;
     width: 100%;
+    margin: 0 auto;
     height: 250px;
     border-top: 2px solid grey;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 #footer1{
+    width: 10%;
     display: flex;
     flex-direction: column;
 
@@ -126,7 +182,7 @@ a{
     text-decoration: none;
 }
 #footer1 h3{
-    font-size: 12px;
+    font-size: 15px;
     color: white;
 }
 
@@ -151,9 +207,25 @@ a{
 #footer2 img{
     height: 30px;
     width: 30px;
-    margin-right: 10px;}
+    margin-right: 10px;
+}
 
-/* Media Style */
+
+
+
+ /* Media Style */
+
+    @media  screen and (max-width:1100px) {
+
+    .productAndInfo{
+        width: 90%;
+        text-align: center;
+    }
+    .productAndInfo h3 h4{
+        margin: 0 auto;
+        width: 100%;
+    }
+
 
     @media  screen and (max-width:1000px) {
 
@@ -164,9 +236,143 @@ a{
             display: flex;
             justify-content: end;
         }
+        .productAndInfo{
+            width: 90%;
+            text-align: center;
+        }
+        .productAndInfo h1{
+            color: goldenrod;
+            margin: 0 auto;
+        }
+
+        .productAndInfo h3 h4{
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .secondSectionContainer{
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .titleDiv h2{
+            font-size: 50px;
+        }
+        .pDiv p{
+            font-size: 12px;
+        
+        }    
+        #footer1{
+            width: 30%;
+        }
+        #footer1 h2{
+            font-size: 20px;
+        }
+
+        #footer1 h3{
+            font-size: 14px;
+        }
+        
+        #footer2{
+            width: 30%;
+        }
+        #footer2 h3{
+            font-size: 13px;
+        }
+
+    }
+
+
+    @media  screen and (max-width:500px) {
+
+        .nav-submenu{
+            display: none !important;
+        }
+        .collapse navbar-collapse{
+            display: flex;
+            justify-content: end;
+        }
+        .fundoinicial{
+            height: 450px;
+        }
+        .productAndInfo{
+            width: 90%;
+            text-align: center;
+        }
+        .productAndInfo h1{
+            color: goldenrod;
+            margin: 0 auto;
+            font-size: 50px;
+        }
+        .productAndInfo h3, h4{
+            width: 80%;
+            margin: 0 auto;
+            font-size: 16px;
+        }
         .productAndInfo img{
             height: 200px;
             object-fit: cover;
         }
+        .secondSection{
+            height: 200px;
+        }
+        .secondSectionContainer{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .titleDiv{
+            width: 90%;
+        }
+        .pDiv{
+            width: 90%;
         
+        }
+        .titleDiv h2{
+            font-size: 28px;
+            text-align: center;
+        }
+        .pDiv p{
+            font-size: 8px;
+        
+        }
+
+        #footer1{
+            width: 20%;
+        }
+        #footer1 h2{
+            font-size: 18px;
+        }
+
+        #footer1 h3{
+            font-size: 11px;
+        }
+        
+        #footer2{
+            width: 30%;
+        }
+        #footer2 h3{
+            font-size: 10px;
+        }
+
+        #footer2 img{
+            height: 20px;
+            width: 20px;
+        }      
     }
+
+/* ANIMATIONS WITH CSS */
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0%;
+        }
+        to{
+            opacity: 100%;
+        }
+    }
+
+}
