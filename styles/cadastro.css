@@ -83,6 +83,9 @@ input{
     font-weight: bold;
     font-style: normal;
 }
+input:focus{
+    outline: none;
+}
 ::placeholder{
     /* color: rgba(0, 0, 0, 0.356); */
     color: rgba(0, 0, 0, 0.452);
@@ -100,6 +103,12 @@ input{
 .fiveInputs{
     display: flex; 
     flex-direction: column;
+}
+.span-required{
+    font-size: 9px;
+    color: black;
+    font-weight: bolder;
+    display: none;
 }
 /* .popUp{
     display: none;
