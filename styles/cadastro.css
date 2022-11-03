@@ -101,6 +101,14 @@ input{
     display: flex; 
     flex-direction: column;
 }
+/* .popUp{
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 10;
+    background: blueviolet;
+} */
 .btn0{
     padding: 5px;
     margin-top: 25px;

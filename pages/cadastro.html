@@ -87,6 +87,7 @@
               name="senha"
               id="senha"
               placeholder="SENHA"
+              required
             />
             <input
               type="number"
@@ -94,12 +95,7 @@
               id="RG"
               placeholder="REGISTRO GERAL (RG)"
             />
-            <input
-              type="text"
-              name="rua"
-              id="rua"
-              placeholder="RUA"
-            />
+            <input type="text" name="rua" id="rua" placeholder="RUA" />
             <input
               type="text"
               name="municipio"
@@ -109,17 +105,14 @@
           </section>
 
           <section class="fiveInputs">
-            <input 
-            type="email" 
-            name="email" 
-            id="email" 
-            placeholder="E-MAIL" 
-            />
+            <input type="email" name="email" id="email" placeholder="E-MAIL" required/>
             <input
               type="password"
               name="confirmarSenha"
               id="confirmarSenha"
               placeholder="CONFIRME SUA SENHA"
+              onclick="validarSenha()"
+              required
             />
             <input
               type="text"
@@ -129,31 +122,24 @@
               id="cep"
               placeholder="CEP"
             />
-            <input
-             type="text"
-             name="bairro" 
-             id="bairro" 
-             placeholder="BAIRRO"
-            />
-            <input 
-            type="text" 
-            name="uf" 
-            id="uf" 
-            placeholder="UF" 
-            />
+            <input type="text" name="bairro" id="bairro" placeholder="BAIRRO" />
+            <input type="text" name="uf" id="uf" placeholder="UF" />
           </section>
         </div>
 
         <div class="btn0">
-          <input 
-          type="submit" 
-          value="FINALIZAR" 
-          id="btnSubmit" 
-          />
+          <input type="submit" value="FINALIZAR" id="btnSubmit" />
         </div>
       </form>
     </main>
-
+    <!-- <div class="popUp">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis
+        sapiente cum aliquid quasi libero ad architecto aspernatur quod,
+        molestias rerum quidem et commodi. Ipsum magni labore laborum
+        dignissimos temporibus.
+      </p>
+    </div> -->
     <footer>
       <div id="footer1">
         <!-- here goes de footer of all the pages -->

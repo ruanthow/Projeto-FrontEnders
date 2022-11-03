@@ -1,5 +1,20 @@
 console.log('andrew');
 
+let senha = document.getElementById('senha');
+let senhaC = document.getElementById('confirmarSenha');
+
+function validarSenha() {
+  if (senha.value != senhaC.value) {
+    senhaC.setCustomValidity("Senhas diferentes!");
+    senhaC.reportValidity();
+    return false;
+  } else {
+    senhaC.setCustomValidity("");
+    return true;
+  }
+}
+
+
 const preencherForm = (endereco) => {
   document.querySelector('#rua').value = endereco.logradouro;
   document.querySelector('#bairro').value = endereco.bairro;
@@ -14,12 +29,9 @@ const limparForm = (endereco) => {
   document.querySelector('#uf').value = '';
 };
 
-
-
 const eNumero = (numero) => /^[0-9]+$/.test(numero);
 
 const cepValido = (cep) => cep.length === 8 && eNumero(cep);
-
 
 const pesquisarCep = async () => {
 
@@ -42,3 +54,5 @@ const pesquisarCep = async () => {
 
 document.querySelector('#cep')
   .addEventListener('focusout', pesquisarCep);
+
+
