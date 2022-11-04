@@ -1,0 +1,288 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap');
+
+body{
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.fundoinicial{
+    height: 600px;
+    background-image: linear-gradient(180deg, #000000 0%, #000000 35.42%, #171717 55.21%, #000000 71.35%, #000000 100%);
+}
+.textColor1{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+.textColor1:hover{
+    color: gold;
+    transform: scale(1.1);
+    transition: 1.5s;
+}
+.nav-submenu-login{
+    padding-right: 10px;
+    margin-right: 16px;
+    border-right: 1px solid white ;
+    
+}
+.nav-submenu-login img{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* princilpal */
+main{
+    position: relative;
+    margin-top: 80px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 20px;
+    height: 500px;
+    background: #FDBA12;
+    border-radius: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    background: #FDBA12;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+}
+.title{
+    padding: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.title section{
+    font-family: 'Lobster', cursive;
+    font-size: 30pt;
+    font-weight: bold;
+    padding: 5px;
+}
+input{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px 5px 8px 5px;
+    border: none;
+    margin-top: 25px;
+    width: 25vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.35);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: normal;
+}
+input:hover{
+    border: 1px solid black;
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    /* color: rgba(0, 0, 0, 0.356); */
+    color: rgba(0, 0, 0, 0.452);
+    text-align: center;
+    font-size: 7pt;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+.allInputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fiveInputs{
+    display: flex; 
+    flex-direction: column;
+}
+.span-required{
+    font-size: 8px;
+    color: black;
+    font-weight: bolder;
+    display: none;
+}
+.popUp{
+    display: none;
+    position: absolute;
+    top: 213px;
+    right: 353px;
+    z-index: 10;
+    background: #c4900e;
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 8px 8px;
+}
+.popUp span{
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+}
+.btn0{
+    padding: 5px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#btnSubmit{
+    margin-top: 0;
+    width: 10vw;
+    background: #fff8dc;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.603);
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10pt;
+    font-weight: 900;
+}
+#btnSubmit:hover{
+    width: 10vw;
+    height: 5vh;
+    font-size: 11pt;
+    font-weight: bold;
+}
+/* Footer CSS */
+
+footer{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+    height: 250px;
+    border-top: 2px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer1{
+    display: flex;
+    flex-direction: column;
+
+}
+#footer1 h2{
+    font-size: 20px;
+    color: white;
+}
+#footer1 h3:visited{
+    color: white;
+    text-decoration: none;
+}
+#footer1 h3:hover{
+    color: white;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+}
+#footer1 h3{
+    font-size: 12px;
+    color: white;
+}
+
+#footer2{
+    width: 30%;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#footer2 h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.footerImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#footer2 img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;}
+
+/* Media Style */
+
+    @media  screen and (max-width:1000px) {
+
+        .nav-submenu{
+            display: none !important;
+        }
+        .collapse navbar-collapse{
+            display: flex;
+            justify-content: end;
+        }
+        .productAndInfo img{
+            height: 200px;
+            object-fit: cover;
+        }  
+    }
+    @media screen and (max-width:1440px){
+            .popUp{
+            top: 223px;
+            right: 380px;
+        }
+    }
+    @media screen and (max-width:1024px){
+            .popUp{
+            top: 216px;
+            right: 231px;
+        }
+    }
+    @media screen and (max-width:768px){
+            .popUp{
+            top: 216px;
+            right: 148px;
+        }
+    }
+    @media screen and (max-width:425px){
+        input{
+            width: 30vw;
+            height: 4vh;   
+        }
+        .title section{
+            font-size: 25pt;
+        }
+        .popUp{
+            top: 150px;
+            right: 20px;
+        }
+        #btnSubmit{
+            font-size: 8pt;
+            padding: 3px 3px;
+            width: 20vw;
+            height: 4vh;
+        }      
+        #btnSubmit:hover{
+            padding: 3px 3px;
+            width: 20vw;
+            height: 4vh;
+            font-size: 9pt;
+        }
+    }
+    @media screen and (max-width:375px){
+        .popUp{
+            top: 184px;
+            right: 2px;
+        }
+        .span-required{
+            font-size: 7px;
+        }
+}

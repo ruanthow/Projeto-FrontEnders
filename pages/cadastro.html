@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/cadastro.css" />
+    <title>CONTATO</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-black navbar-white">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" style="width: 183px" href="#"
+            >Logo</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-warning"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link textColor1" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textColor1" href="#">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textColor1" href="./contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-submenu d-flex flex-row">
+            <div class="nav-submenu-login d-flex flex-row">
+              <img
+                src="../assets/img/iconLogin.png"
+                width="20px"
+                height="20px"
+                alt="icone de login"
+              />
+              <a class="nav-link textColor1" href="#">Login</a>
+            </div>
+            <div class="nav-submenu-cadastro">
+              <a class="nav-link textColor1" href="#">Cadastre-se</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- PRINCIPAL -->
+    <main>
+      <div class="popUp">
+        <p>
+          <span onclick="limparForm()">X</span>
+          <h6>Cadastro realizado com sucesso.</h6>
+        </p>
+      </div>
+      <form id="form">
+        <div class="title">
+          <section>Cadastre-se</section>
+        </div>
+
+        <div class="allInputs">
+          <section class="fiveInputs">
+            <input
+              class="inputs required"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="NOME COMPLETO"
+              oninput="nameValidate()"
+            />
+            <span class="span-required">Por favor, digite um nome válido.</span>
+            <input
+              class="inputs required"
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="SENHA"
+              oninput="firstPasswordValidate()"
+            />
+            <span class="span-required"
+              >Sua senha deve ter 8 caracteres.</span
+            >
+
+            <input
+              class="inputs required"
+              type="text"
+              name="RG"
+              id="rg"
+              placeholder="REGISTRO GERAL (RG)"
+              oninput="rgValidate()"
+            />
+            <span class="span-required">Por favor, insira o RG válido.</span>
+            <input type="text" name="rua" id="rua" placeholder="RUA" />
+            <input
+              type="text"
+              name="municipio"
+              id="municipio"
+              placeholder="MUNICIPIO"
+            />
+          </section>
+
+          <section class="fiveInputs">
+            <input
+              class="inputs required"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-MAIL"
+              oninput="emailValidate()"
+            />
+            <span class="span-required"
+              >Por favor. Insira um email válido.</span
+            >
+
+            <input
+              class="inputs required"
+              type="password"
+              name="confirmarSenha"
+              id="confirmarSenha"
+              placeholder="CONFIRME SUA SENHA"
+              oninput="comparePassword()"
+            />
+            <span class="span-required">Suas senhas não coincidem.</span>
+
+            <input
+              class="inputs required"
+              type="text"
+              minlength="8"
+              maxlength="8"
+              name="cep"
+              id="cep"
+              placeholder="CEP"
+            />
+            <span class="span-required">Por favor. Insira um CEP válido.</span>
+            <input type="text" name="bairro" id="bairro" placeholder="BAIRRO" />
+            <input type="text" name="uf" id="uf" placeholder="UF" />
+          </section>
+        </div>
+
+        <div class="btn0">
+          <input type="submit" value="FINALIZAR" id="btnSubmit" />
+        </div>
+      </form>
+    </main>
+  
+    <footer>
+      <div id="footer1">
+        <!-- here goes de footer of all the pages -->
+        <h2>Logo</h2>
+        <a href="#">
+          <h3>Sobre</h3>
+        </a>
+        <a href="#">
+          <h3>Produtos</h3>
+        </a>
+        <a href="#">
+          <h3>Contato</h3>
+        </a>
+        <a href="#">
+          <h3>Login</h3>
+        </a>
+        <a href="#">
+          <h3>Cadastre-se</h3>
+        </a>
+      </div>
+      <div id="footer2">
+        <h3>
+          Copyright © 2022 FrontEnders Inc. Todos os direitos reservados.
+          FrontEnders Ltda. CNPJ: 00.111.1111./0000
+        </h3>
+        <div class="footerImg">
+          <img src="../assets/img/instagram.png" alt="Logo Instagram" />
+          <img src="../assets/img/youtube.png" alt="Logo Youtube" />
+          <img src="../assets/img/twitter.png" alt="Logo Twitter" />
+          <img src="../assets/img/whatsapp.png" alt="Logo Whatsapp" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/cadastro.js" defer></script>
+  </body>
+</html>
