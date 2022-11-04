@@ -11,14 +11,17 @@
         @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;500;600;700&display=swap');
         </style>
-    <title>T-Buds</title>
+    <title>SpokeBuds</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg fixed-top bg-transparent navbar-white">
       <div class="container-fluid">
-        <a class="navbar-brand text-white" style="width:183px;" href="#">Logo</a>
+        <a class="navbar-brand text-white" style="width:183px;" href="./index.html">
+          <img src="../assets/img/iconSpokebuds.png" alt="imagem Logo" style="height: 25px; width: 25px; margin-right: 8px;">
+          FrontEnders
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon bg-warning"></span>
@@ -26,24 +29,24 @@
         <div class="collapse navbar-collapse  justify-content-center" id="navbarNav">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link textColor1" aria-current="page" href="#">Home</a>
+              <a class="nav-link textColor1" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link textColor1" href="#">Produtos</a>
+              <a class="nav-link textColor1" href="./pages/produtos.html">Produtos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link textColor1" href="#">Contato</a>
+              <a class="nav-link textColor1" href="./pages/contato.html">Contato</a>
             </li>
           </ul>
         </div>
         <div class="nav-submenu d-flex flex-row">
           <div class="nav-submenu-login d-flex flex-row">
             <img src="./assets/img/iconLogin.png" width="20px" height="20px" alt="icone de login">
-            <a class="nav-link textColor1" href="#">Login</a>
+            <a class="nav-link textColor1" href="./pages/login.html">Login</a>
           </div>
           <div class="nav-submenu-cadastro">
-            <a class="nav-link textColor1" href="#">Cadastre-se</a>
-          </div>   
+            <a class="nav-link textColor1" href="./pages/cadastro.html">Cadastre-se</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -51,7 +54,7 @@
   <main>
     <section class="sectionPrincipal fundoinicial">
       <section class="productAndInfo">
-        <h1>SpokeBuds</h1>
+        <h1 class='gradient'>SpokeBuds</h1>
         <h3 style="padding-bottom: 10px; padding-top: 10px; color: grey; opacity: 80%;">Fala que eu te escuto!</h3>
         <h3>Traduza o mundo. Tudo em todo lugar.</h3>
         <h4>O fone de ouvido tradutor mais rápido do mundo. Lista de espera já disponível.</h4>
@@ -59,27 +62,35 @@
         <p>Saiba Mais</p>
         <p>Lista de Espera</p>
       </div>
-      <div class="imgBox"><img src="./imgs/fone ouvido inicial 1.png" alt="Photo of our Phone"></div>       
+      <div class="imgBox"><img src="./assets/img/fone ouvido inicial 1.png" alt="Photo of our Phone"></div>       
       </section>
     </section>
     <section class="secondSection">
-
+      <div class="secondSectionContainer">
+        <div class='titleDiv'>
+          <h2 class='gradientSide'>O fone tradutor da FrontEnders</h2>
+        </div>
+        <div class='pDiv'>
+          <p>Com o Spokebuds você pode viajar e entender todos os idiomas. A nova tecnologia da FrontEnders permite a tradução simultânea dos sons captados no nosso microfone.</p>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
     <div id="footer1">
       <!-- here goes de footer of all the pages -->
-      <h2>Logo</h2>
-      <a href="#">
+      <picture><a href="./index.html"><img src="./assets/img/iconSpokebuds.png" alt="imagem Logo" style="height: 35px; width: 35px; margin-bottom: 10px;"></a></picture>
+      <a href="./index.html">
+      <a href="./index.html">
         <h3>Sobre</h3>
       </a>
-      <a href="#">
+      <a href="./pages/produtos.html">
         <h3>Produtos</h3>
       </a>
-      <a href="#">
+      <a href="./pages/contato.html">
         <h3>Contato</h3>
       </a>
-      <a href="#">
+      <a href="./pages/login.html">
         <h3>Login</h3>
       </a>
       <a href="#">
@@ -89,13 +100,14 @@
     <div id="footer2">
       <h3>Copyright © 2022 FrontEnders Inc. Todos os direitos reservados. FrontEnders Ltda. CNPJ: 00.111.1111./0000</h3>
       <div class="footerImg">
-          <img src="./imgs/instagram.png" alt="Logo Instagram">
-          <img src="./imgs/youtube.png" alt="Logo Youtube">
-          <img src="./imgs/twitter.png" alt="Logo Twitter">
-          <img src="./imgs/whatsapp.png" alt="Logo Whatsapp">
+          <img src="./assets/img/instagram.png" alt="Logo Instagram">
+          <img src="./assets/img/youtube.png" alt="Logo Youtube">
+          <img src="./assets/img/twitter.png" alt="Logo Twitter">
+          <img src="./assets/img/whatsapp.png" alt="Logo Whatsapp">
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
