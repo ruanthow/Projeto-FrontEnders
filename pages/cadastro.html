@@ -69,6 +69,12 @@
     </header>
     <!-- PRINCIPAL -->
     <main>
+      <div class="popUp">
+        <p>
+          <span onclick="limparForm()">X</span>
+          <h6>Cadastro realizado com sucesso.</h6>
+        </p>
+      </div>
       <form id="form">
         <div class="title">
           <section>Cadastre-se</section>
@@ -94,20 +100,18 @@
               oninput="firstPasswordValidate()"
             />
             <span class="span-required"
-              >Sua senha deve conter mais de 8 caracteres.</span
+              >Sua senha deve ter 8 caracteres.</span
             >
 
             <input
               class="inputs required"
               type="text"
               name="RG"
-              id="RG"
+              id="rg"
               placeholder="REGISTRO GERAL (RG)"
               oninput="rgValidate()"
             />
-            <span class="span-required"
-              >Por favor, insira o RG válido.</span
-            >
+            <span class="span-required">Por favor, insira o RG válido.</span>
             <input type="text" name="rua" id="rua" placeholder="RUA" />
             <input
               type="text"
@@ -127,7 +131,7 @@
               oninput="emailValidate()"
             />
             <span class="span-required"
-              >Por favor, insira um email válido.</span
+              >Por favor. Insira um email válido.</span
             >
 
             <input
@@ -149,7 +153,7 @@
               id="cep"
               placeholder="CEP"
             />
-            <span class="span-required">Por favor, insira um CEP válido.</span>
+            <span class="span-required">Por favor. Insira um CEP válido.</span>
             <input type="text" name="bairro" id="bairro" placeholder="BAIRRO" />
             <input type="text" name="uf" id="uf" placeholder="UF" />
           </section>
@@ -160,14 +164,7 @@
         </div>
       </form>
     </main>
-    <!-- <div class="popUp">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi omnis
-        sapiente cum aliquid quasi libero ad architecto aspernatur quod,
-        molestias rerum quidem et commodi. Ipsum magni labore laborum
-        dignissimos temporibus.
-      </p>
-    </div> -->
+  
     <footer>
       <div id="footer1">
         <!-- here goes de footer of all the pages -->

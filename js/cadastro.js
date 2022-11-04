@@ -15,12 +15,19 @@ form.addEventListener('submit', (event) => {
   comparePassword();
   rgValidate();
   pesquisarCep();
+  showMensagem();
 });
+
+function showMensagem() {
+  const popUp = document.querySelector('.popUp');
+  popUp.style.display = 'block';
+}
 
 function setError(index) {
   campos[index].style.border = '2px solid red'
   spans[index].style.display = 'block';
 }
+
 function removeError(index) {
   campos[index].style.border = '';
   spans[index].style.display = 'none';
@@ -74,7 +81,15 @@ const preencherForm = (endereco) => {
   document.querySelector('#uf').value = endereco.uf;
 };
 
-const limparForm = (endereco) => {
+function limparForm() {
+  const popUp = document.querySelector('.popUp');
+  popUp.style.display = 'none';
+  document.querySelector('#name').value = '';
+  document.querySelector('#email').value = '';
+  document.querySelector('#senha').value = '';
+  document.querySelector('#confirmarSenha').value = '';
+  document.querySelector('#rg').value = '';
+  document.querySelector('#cep').value = '';
   document.querySelector('#rua').value = '';
   document.querySelector('#bairro').value = '';
   document.querySelector('#municipio').value = '';
@@ -87,7 +102,6 @@ const cepValido = (cep) => cep.length === 8 && eNumero(cep);
 
 const pesquisarCep = async () => {
 
-  limparForm();
 
   const cep = document.querySelector('#cep').value;
   const url = `https://viacep.com.br/ws/${cep}/json/`;
