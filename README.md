@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto FrontEnders - SpokeBuds  💻	 </h1>
+##Projeto FrontEnders - SpokeBuds  💻
 Segundo projeto em grupo do curso de Desenvolvimento web da Resilia e Senac. 
 
 ##  Objetivo do projeto 📍
@@ -12,5 +12,5 @@ HTML5, CSS3, JavaScript, Bootstrap, Figma e Vscode.
 <img align="center" alt="css" height="30" width="40" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png">
 <img align="center" alt="figma" height="30" width="40" src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png">
 <img align="center" alt="vscode" height="30" width="40" src="https://user-images.githubusercontent.com/25181517/182618272-390ab138-7b29-44a0-85a2-62633957d815.png">
+<img align="center" alt="boostrap" height="30" width="40" src="">
 </div>
-<i class="bi bi-github"></i>
