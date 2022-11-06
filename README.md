@@ -19,4 +19,4 @@ Para esse projeto, montamos uma web page de lançamento para o nosso produto ino
 ## O projeto
 
 ## O grupo
-
+Link Figma = https://www.figma.com/community/file/1171151108810822680
