@@ -19,4 +19,4 @@ Para esse projeto, montamos uma web page de lançamento para o nosso produto ino
 ## O projeto
 
 ## O grupo
-Link Figma = https://www.figma.com/community/file/1171151108810822680
+Figma <img align="center" alt="figma" height="30" width="40" src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png"> = https://www.figma.com/community/file/1171151108810822680
