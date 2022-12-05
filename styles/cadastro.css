@@ -158,18 +158,22 @@ input:focus{
 }
 /* Footer CSS */
 
+/* Footer CSS */
+
 footer{
     color: white;
     font-family: 'Inconsolata', monospace;
     width: 100%;
+    margin: 0 auto;
     height: 250px;
     border-top: 2px solid grey;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 #footer1{
+    width: 10%;
     display: flex;
     flex-direction: column;
 
@@ -191,7 +195,7 @@ a{
     text-decoration: none;
 }
 #footer1 h3{
-    font-size: 12px;
+    font-size: 15px;
     color: white;
 }
 
@@ -216,8 +220,8 @@ a{
 #footer2 img{
     height: 30px;
     width: 30px;
-    margin-right: 10px;}
-
+    margin-right: 10px;
+}
 /* Media Style */
 
     @media  screen and (max-width:1000px) {
@@ -233,6 +237,7 @@ a{
             height: 200px;
             object-fit: cover;
         }  
+
     }
     @media screen and (max-width:1440px){
             .popUp{
@@ -277,6 +282,50 @@ a{
             font-size: 9pt;
         }
         
+      
+    }
+    @media screen and (max-width:375px){
+        .popUp{
+            top: 184px;
+            right: 2px;
+        }
+        .span-required{
+            font-size: 7px;
+        }
+}
+
+ /* Media Style footer */
+
+
+
+
+    @media  screen and (max-width:1000px) {
+
+   
+        #footer1{
+            width: 30%;
+        }
+        #footer1 h2{
+            font-size: 20px;
+        }
+
+        #footer1 h3{
+            font-size: 14px;
+        }
+        
+        #footer2{
+            width: 30%;
+        }
+        #footer2 h3{
+            font-size: 13px;
+        }
+
+    }
+
+
+    @media  screen and (max-width:500px) {
+
+
         #footer1{
             width: 20%;
         }
@@ -300,12 +349,3 @@ a{
             width: 20px;
         }      
     }
-    @media screen and (max-width:375px){
-        .popUp{
-            top: 184px;
-            right: 2px;
-        }
-        .span-required{
-            font-size: 7px;
-        }
-}

@@ -53,11 +53,9 @@ main .title{
 }
 
 main h1{
-    color: goldenrod;
     font-size: 70px;
     letter-spacing: 2px;
     font-weight: 600;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.247);
 }
 
 main .team1{
@@ -124,6 +122,24 @@ main .dev:hover .cardBack{
     padding: 0 20px 0 30px;
     animation: slideR 0.2s;
 }
+
+.gradient {
+    background: linear-gradient(to bottom, rgba(210,150,0,1) 0%, rgba(255,215,0,1) 35%, rgb(241, 223, 140) 52%, rgba(255,215,0,1) 65%, rgba(210,150,0,1) 86%);
+    color: rgb(255, 255, 255);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+.gradientSide {
+    background: linear-gradient(90deg, rgba(210,150,0,1) 0%, rgba(255,215,0,1) 35%, rgb(240, 217, 114) 52%, rgba(255,215,0,1) 65%, rgba(210,150,0,1) 86%);
+    color: rgb(255, 255, 255);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+
 /* end main */
 
 @media  screen and (max-width:1080px) {
@@ -221,48 +237,44 @@ main .dev:hover .cardBack{
     }
 }
 
-/* start footer */
+/* Footer CSS */
+
 footer{
     color: white;
     font-family: 'Inconsolata', monospace;
     width: 100%;
+    margin: 0 auto;
     height: 250px;
     border-top: 2px solid grey;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
-
 #footer1{
+    width: 10%;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-    
-}
 
+}
 #footer1 h2{
     font-size: 20px;
     color: white;
 }
-
 #footer1 h3:visited{
     color: white;
     text-decoration: none;
 }
-
 #footer1 h3:hover{
     color: white;
     text-decoration: none;
 
 }
-
 a{
     text-decoration: none;
 }
-
 #footer1 h3{
-    font-size: 12px;
+    font-size: 15px;
     color: white;
 }
 
@@ -275,20 +287,68 @@ a{
     justify-content: center;
     text-align: center;
 }
-
 #footer2 h3{
     font-size: 15px;
     margin-bottom: 10px;
 }
-
 .footerImg{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
 #footer2 img{
     height: 30px;
     width: 30px;
-    margin-right: 10px;}
-/* end footer */
+    margin-right: 10px;
+}
+
+
+    @media  screen and (max-width:1000px) {
+   
+        #footer1{
+            width: 30%;
+        }
+        #footer1 h2{
+            font-size: 20px;
+        }
+
+        #footer1 h3{
+            font-size: 14px;
+        }
+        
+        #footer2{
+            width: 30%;
+        }
+        #footer2 h3{
+            font-size: 13px;
+        }
+
+    }
+
+
+    @media  screen and (max-width:500px) {
+
+
+        #footer1{
+            width: 20%;
+        }
+        #footer1 h2{
+            font-size: 18px;
+        }
+
+        #footer1 h3{
+            font-size: 11px;
+        }
+        
+        #footer2{
+            width: 30%;
+        }
+        #footer2 h3{
+            font-size: 10px;
+        }
+
+        #footer2 img{
+            height: 20px;
+            width: 20px;
+        }      
+    }

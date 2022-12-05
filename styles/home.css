@@ -15,12 +15,15 @@ body{
     height: 600px;
     background-image: linear-gradient(180deg, #000000 0%, #000000 35.42%, #171717 55.21%, #000000 71.35%, #000000 100%);
 }
+
+/* NavBar */
+
 .textColor1{
     color: white;
     font-family: 'Inconsolata', monospace;
 }
 .textColor1:hover{
-    color: #ffd700;
+    color: gold;
     transform: scale(1.1);
     transition: 1.5s;
 }
