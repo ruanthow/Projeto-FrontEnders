@@ -1,37 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;500;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    
-    background: black ;
+body {
+
+    background: black;
     width: 100%;
     overflow-x: hidden;
-   
+
 }
 
 /* NavBar */
 
-.textColor1{
+.textColor1 {
     color: white;
     font-family: 'Inconsolata', monospace;
 }
-.textColor1:hover{
+
+.textColor1:hover {
     color: gold;
     transform: scale(1.1);
     transition: 1.5s;
 }
-.nav-submenu-login{
+
+.nav-submenu-login {
     padding-right: 10px;
     margin-right: 16px;
-    border-right: 1px solid white ;
-    
+    border-right: 1px solid white;
+
 }
-.nav-submenu-login img{
+
+.nav-submenu-login img {
     width: 20px;
     height: 20px;
     margin-right: 8px;
@@ -39,15 +43,16 @@ body{
 
 
 /* Main */
-.fristSection{
+.fristSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
     justify-items: center;
     align-items: center;
 }
+
 .gradient {
-    background: linear-gradient(90deg, rgba(210,150,0,1) 0%, rgba(255,215,0,1) 35%, rgb(240, 217, 114) 52%, rgba(255,215,0,1) 65%, rgba(210,150,0,1) 86%);
+    background: linear-gradient(90deg, rgba(210, 150, 0, 1) 0%, rgba(255, 215, 0, 1) 35%, rgb(240, 217, 114) 52%, rgba(255, 215, 0, 1) 65%, rgba(210, 150, 0, 1) 86%);
     color: rgb(255, 255, 255);
     background-clip: text;
     -webkit-background-clip: text;
@@ -55,18 +60,23 @@ body{
     -webkit-text-fill-color: transparent;
 }
 
-.areaIntro h1{
+.areaIntro h1 {
     font-size: 75pt;
-    
+
 }
-.areaIntro img{
+
+.areaIntro img {
     padding-top: 112px;
 }
-.areaIntro2 h1{
+
+.areaIntro2 h1 {
     color: white;
 }
+
 /*CARROSEUL 1*/
-.carouselAreaIntro, .carouselAreaIntro2, .carouselAreaIntro3{
+.carouselAreaIntro,
+.carouselAreaIntro2,
+.carouselAreaIntro3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
@@ -74,120 +84,171 @@ body{
     justify-items: center;
     align-items: center;
     position: relative;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 247, 247, 0) 100%);;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 247, 247, 0) 100%);
+    ;
 }
-.carouselAreaIntro h1 , .carouselAreaIntro2 h1, .carouselAreaIntro3 h1{
+
+.carouselAreaIntro h1,
+.carouselAreaIntro2 h1,
+.carouselAreaIntro3 h1 {
     position: absolute;
     font-size: 45pt;
     left: 36%;
     color: white;
 }
-.bgGirlModel{
+
+.bgGirlModel {
     height: 100%;
 }
-.bgImgFoneAxe{
+
+.bgImgFoneAxe {
     background: linear-gradient(180deg, #292929 0%, rgba(81, 81, 81, 0) 100%);
     position: relative;
     height: 500px;
     width: 100%;
 }
-.bgImgFoneAxe img{
+
+.bgImgFoneAxe img {
     position: absolute;
     top: -20%;
     left: 20%;
-   
+
 }
-.bgImgFoneSquare{
+
+.bgImgFoneSquare {
     background: linear-gradient(180deg, #292929 0%, rgba(81, 81, 81, 0) 100%);
     height: 500px;
     width: 100%;
 }
-.bgImgFoneSquare img{
+
+.bgImgFoneSquare img {
     width: 100%;
 }
-.bgManModel{
+
+.bgManModel {
     height: 500px;
     width: 100%;
     position: relative;
 }
-.bgManModel img{
+
+.bgManModel img {
     position: absolute;
     top: 10%;
     left: 20%;
 }
-.bgmanModel2{
+
+.bgmanModel2 {
     display: flex;
     justify-content: flex-start;
     width: 100%;
     height: 100%;
 }
-.bgImgfoneRunner{
+
+.bgImgfoneRunner {
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, #292929 0%, rgba(81, 81, 81, 0) 100%);
     height: 500px;
     width: 100%;
 }
+
 /*CARROSEUL 2*/
-.content2{
+.content2 {
     height: 100vh;
     background: linear-gradient(180deg, #222222 0%, rgba(255, 253, 253, 0.42) 100%);
 }
-.content2 h1{
+
+.content2 h1 {
     text-align: center;
     color: white;
     margin-bottom: 130px;
     font-size: 45pt;
 }
-.containerContent, .containerContent2, .containerContent3{
+
+.containerContent,
+.containerContent2,
+.containerContent3 {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.13) 100%);
     height: 900px;
     width: 100%;
 }
-.squareColor1, .squareColor2, .axeColor1, .axeColor2, .runnerColor1, .runnerColor2{
+
+.squareColor1,
+.squareColor2,
+.axeColor1,
+.axeColor2,
+.runnerColor1,
+.runnerColor2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 60%;
 }
-.squareColor1, .axeColor1, .runnerColor1{
+
+.squareColor1,
+.axeColor1,
+.runnerColor1 {
     margin-right: -500px;
     opacity: 0;
 }
-.squareColor2, .axeColor2, .runnerColor2{
+
+.squareColor2,
+.axeColor2,
+.runnerColor2 {
     margin-left: -500px;
     opacity: 0;
 }
-.squareColor1 h3, .squareColor2 h3, .axeColor1 h3, .axeColor2 h3, .runnerColor1 h3, .runnerColor2 h3{
+
+.squareColor1 h3,
+.squareColor2 h3,
+.axeColor1 h3,
+.axeColor2 h3,
+.runnerColor1 h3,
+.runnerColor2 h3 {
     color: white;
 }
-.squareProduct, .axeProduct, .runnerProduct{
+
+.squareProduct,
+.axeProduct,
+.runnerProduct {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
 }
-.squareProduct img, .axeProduct img{
+
+.squareProduct img,
+.axeProduct img {
     margin-top: -88px;
 }
-.runnerProduct img{
+
+.runnerProduct img {
     margin-top: -35px;
 }
-.squareProduct h2, .axeProduct h2, .runnerProduct h2{
+
+.squareProduct h2,
+.axeProduct h2,
+.runnerProduct h2 {
     color: white;
     font-size: 40pt;
     text-align: center;
     margin-top: -50px;
 }
-.squareProduct p, .axeProduct p, .runnerProduct p{
+
+.squareProduct p,
+.axeProduct p,
+.runnerProduct p {
     width: 70%;
     color: white;
     opacity: 0.65;
     text-align: center;
 }
-.squareProduct button, .axeProduct button, .runnerProduct button{
+
+.squareProduct button,
+.axeProduct button,
+.runnerProduct button {
     height: 55px;
     width: 200px;
     border-radius: 50px;
@@ -199,13 +260,17 @@ body{
     color: white;
     box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.35);
 }
-.axeColor1, .axeColor2, .runnerColor1, .runnerColor2{
+
+.axeColor1,
+.axeColor2,
+.runnerColor1,
+.runnerColor2 {
     margin-top: 30%;
 }
 
 /* Footer CSS */
 
-footer{
+footer {
     color: white;
     font-family: 'Inconsolata', monospace;
     width: 100%;
@@ -217,34 +282,40 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 }
-#footer1{
+
+#footer1 {
     width: 10%;
     display: flex;
     flex-direction: column;
 
 }
-#footer1 h2{
+
+#footer1 h2 {
     font-size: 20px;
     color: white;
 }
-#footer1 h3:visited{
+
+#footer1 h3:visited {
     color: white;
     text-decoration: none;
 }
-#footer1 h3:hover{
+
+#footer1 h3:hover {
     color: white;
     text-decoration: none;
 
 }
-a{
+
+a {
     text-decoration: none;
 }
-#footer1 h3{
+
+#footer1 h3 {
     font-size: 15px;
     color: white;
 }
 
-#footer2{
+#footer2 {
     width: 30%;
     color: white;
     font-family: 'Inconsolata', monospace;
@@ -253,16 +324,19 @@ a{
     justify-content: center;
     text-align: center;
 }
-#footer2 h3{
+
+#footer2 h3 {
     font-size: 15px;
     margin-bottom: 10px;
 }
-.footerImg{
+
+.footerImg {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#footer2 img{
+
+#footer2 img {
     height: 30px;
     width: 30px;
     margin-right: 10px;
@@ -270,248 +344,330 @@ a{
 
 /* Media Style */
 
-    @media  screen and (max-width:1024px) {
-        
-        .bgImgFoneAxe img {
-            height: 500px;
-            position: relative;
-            top: 0;
-            right: 0;
-        }
-        .bgImgFoneSquare{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .bgImgFoneSquare img{
-            height: 400px;
-            width: 650px;
-            position: relative;
-            top: 0;
-            right: 0;
-        }
-        .squareProduct p, .axeProduct p, .runnerProduct p{
-            width: 100%;
-        }
-        .squareProduct img{
-            width: 400px;
-            margin-top: -50px;
-        }
-        .axeProduct img, .runnerProduct img{
-            width: 280px;
-            margin-bottom: 32px;
-        }
-        .axeColor1 img, .axeColor2 img, .squareColor1 img, .squareColor2 img{
-            width: 250px;
-        }
-        .axeColor1 h3, .axeColor2 h3, .squareColor1 h3, .squareColor2 h3, .runnerColor1 h3, .runnerColor2 h3{
-            font-size: 16pt;
-        }
-        #footer1{
-            width: 30%;
-        }
-        #footer1 h2{
-            font-size: 20px;
-        }
+@media screen and (max-width:1024px) {
 
-        #footer1 h3{
-            font-size: 14px;
-        }
-        
-        #footer2{
-            width: 30%;
-        }
-        #footer2 h3{
-            font-size: 13px;
-        }
-
-        
-    }
-    @media  screen and (max-width:768px) {
-        .navbar-toggler{
-            display: block !important;
-        }
-        .nav-submenu{
-            display: none !important;
-        }
-        .fristSection{
-            grid-template-columns: 1fr;
-        }
-        .bgImgFoneAxe img {
-            width: 450px;
-            position: relative;
-            top: 0;
-            right: 0;
-        }
-        .bgImgFoneSquare{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .bgImgFoneSquare img{
-            height: 400px;
-            width: 650px;
-            position: relative;
-            top: 0;
-            right: 0;
-        }
-        .squareProduct img{
-            width: 300px;
-            margin: 0 0 64px 0;
-        }
-        .axeProduct img, .runnerProduct img{
-            width: 300px;
-            margin-bottom: 32px;
-        }
-        .squareProduct h2, .axeProduct h2, .runnerProduct h2{
-            font-size: 22pt;
-        }
-        .squareProduct p, .axeProduct p, .runnerProduct p{
-            font-size: 10pt;
-            
-            width: 95%;
-        }
-        .axeColor1 img, .axeColor2 img, .squareColor1 img, .squareColor2 img{
-            width: 200px;
-        }
-        .axeColor1 h3, .axeColor2 h3, .squareColor1 h3, .squareColor2 h3, .runnerColor1 h3, .runnerColor2 h3{
-            font-size: 13pt;
-        }
-        .carouselAreaIntro, .carouselAreaIntro2, .carouselAreaIntro3{
-            display: none !important;
-        }
-        .bgMobile{
-            background: url('../assets/img/bgMobile1.svg');
-            height: 390px;
-            background-size: 110%;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .bgMobile2{
-            background: url('../assets/img/bgMobile2.svg');
-            height: 390px;
-            background-size: 110%;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .bgMobile3{
-            background: url('../assets/img/bgMobile3.svg');
-            height: 390px;
-            background-size: 110%;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        
-    }
-   
-    @media  screen and (max-width:425px){
-        .nav-submenu{
-            display: none !important;
-        }
-        .navbar-toggler{
-            display: block !important;
-        }
-        .fristSection{
-            grid-template-columns: 1fr;
-        }
-        .areaIntro h1{
-            font-size: 55pt;
-        }
-        .areaIntro img{
-            width: 300px;
-        }
-       
-        .carouselAreaIntro, .carouselAreaIntro2, .carouselAreaIntro3{
-            display: none !important;
-        }
-
-        .bgMobile{
-            background: url('../assets/img/bgMobile1.svg');
-            height: 225px;
-            background-size: 450px;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .bgMobile2{
-            background: url('../assets/img/bgMobile2.svg');
-            height: 225px;
-            background-size: 450px;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .bgMobile3{
-            background: url('../assets/img/bgMobile3.svg');
-            height: 225px;
-            background-size: 450px;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .content h1, .content2 h1, .content3 h1{
-            margin: 64px 0;
-            font-size: 20pt;
-            
-        }
-        .containerContent, .containerContent2, .containerContent3{
-            grid-template-columns: 1fr;
-        }
-        .axeProduct img{
-            width: 200px;
-            margin: 24px 0;
-        }
-        .squareProduct img{
-            margin: 64px 0 ;
-            width: 200px;
-        }
-        .runnerProduct img{
-            width: 200px;
-            margin: 32px 0 46px 0;
-        }
-
-        .axeColor1, .axeColor2, .squareColor1, .squareColor2, .runnerColor1, .runnerColor2{
-            display: none !important;
-        }
-        #footer1{
-            width: 20%;
-        }
-        #footer1 h2{
-            font-size: 18px;
-        }
-
-        #footer1 h3{
-            font-size: 11px;
-        }
-        
-        #footer2{
-            width: 30%;
-        }
-        #footer2 h3{
-            font-size: 10px;
-        }
-
-        #footer2 img{
-            height: 20px;
-            width: 20px;
-        }  
-
-    }
-    @media  screen and (max-width:375px){
-        .bgMobile{
-           
-            height: 200px;
-            background-size: 400px;
-            
-        }
-        .bgMobile2{
-          
-            height: 200px;
-            background-size: 400px;
-           
-        }
-        .bgMobile3{
-           
-            height: 200px;
-            background-size: 400px;
-           
-        }
+    .bgImgFoneAxe img {
+        height: 500px;
+        position: relative;
+        top: 0;
+        right: 0;
     }
 
+    .bgImgFoneSquare {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bgImgFoneSquare img {
+        height: 400px;
+        width: 650px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .squareProduct p,
+    .axeProduct p,
+    .runnerProduct p {
+        width: 100%;
+    }
+
+    .squareProduct img {
+        width: 400px;
+        margin-top: -50px;
+    }
+
+    .axeProduct img,
+    .runnerProduct img {
+        width: 280px;
+        margin-bottom: 32px;
+    }
+
+    .axeColor1 img,
+    .axeColor2 img,
+    .squareColor1 img,
+    .squareColor2 img {
+        width: 250px;
+    }
+
+    .axeColor1 h3,
+    .axeColor2 h3,
+    .squareColor1 h3,
+    .squareColor2 h3,
+    .runnerColor1 h3,
+    .runnerColor2 h3 {
+        font-size: 16pt;
+    }
+
+    #footer1 {
+        width: 30%;
+    }
+
+    #footer1 h2 {
+        font-size: 20px;
+    }
+
+    #footer1 h3 {
+        font-size: 14px;
+    }
+
+    #footer2 {
+        width: 30%;
+    }
+
+    #footer2 h3 {
+        font-size: 13px;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .nav-submenu {
+        display: none !important;
+    }
+
+    .fristSection {
+        grid-template-columns: 1fr;
+    }
+
+    .bgImgFoneAxe img {
+        width: 450px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .bgImgFoneSquare {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bgImgFoneSquare img {
+        height: 400px;
+        width: 650px;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .squareProduct img {
+        width: 265px;
+        margin: 0 0 64px 0;
+    }
+
+    .runnerProduct img {
+        width: 270px;
+    }
+
+    .axeProduct img,
+    .runnerProduct img {
+        margin-bottom: 32px;
+    }
+
+    .squareProduct h2,
+    .axeProduct h2,
+    .runnerProduct h2 {
+        font-size: 22pt;
+    }
+
+    .squareProduct p,
+    .axeProduct p,
+    .runnerProduct p {
+        font-size: 10pt;
+
+        width: 95%;
+    }
+
+    .axeColor1 img,
+    .axeColor2 img,
+    .squareColor1 img,
+    .squareColor2 img {
+        width: 200px;
+    }
+
+    .axeColor1 h3,
+    .axeColor2 h3,
+    .squareColor1 h3,
+    .squareColor2 h3,
+    .runnerColor1 h3,
+    .runnerColor2 h3 {
+        font-size: 12pt;
+    }
+
+    .carouselAreaIntro,
+    .carouselAreaIntro2,
+    .carouselAreaIntro3 {
+        display: none !important;
+    }
+
+    .bgMobile {
+        background: url('../assets/img/bgMobile1.svg');
+        height: 390px;
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .bgMobile2 {
+        background: url('../assets/img/bgMobile2.svg');
+        height: 390px;
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .bgMobile3 {
+        background: url('../assets/img/bgMobile3.svg');
+        height: 390px;
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .nav-submenu {
+        display: none !important;
+    }
+
+    .navbar-toggler {
+        display: block !important;
+    }
+
+    .fristSection {
+        grid-template-columns: 1fr;
+    }
+
+    .areaIntro h1 {
+        font-size: 55pt;
+    }
+
+    .areaIntro img {
+        width: 300px;
+    }
+
+    .carouselAreaIntro,
+    .carouselAreaIntro2,
+    .carouselAreaIntro3 {
+        display: none !important;
+    }
+
+    .bgMobile {
+        background: url('../assets/img/bgMobile1.svg');
+        height: 225px;
+        background-size: 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .bgMobile2 {
+        background: url('../assets/img/bgMobile2.svg');
+        height: 225px;
+        background-size: 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .bgMobile3 {
+        background: url('../assets/img/bgMobile3.svg');
+        height: 225px;
+        background-size: 450px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .content h1,
+    .content2 h1,
+    .content3 h1 {
+        margin: 64px 0;
+        font-size: 20pt;
+
+    }
+
+    .containerContent,
+    .containerContent2,
+    .containerContent3 {
+        grid-template-columns: 1fr;
+    }
+
+    .axeProduct img {
+        width: 200px;
+        margin: 24px 0;
+    }
+
+    .squareProduct img {
+        margin: 64px 0;
+        width: 200px;
+    }
+
+    .runnerProduct img {
+        width: 200px;
+        margin: 32px 0 46px 0;
+    }
+
+    .axeColor1,
+    .axeColor2,
+    .squareColor1,
+    .squareColor2,
+    .runnerColor1,
+    .runnerColor2 {
+        display: none !important;
+    }
+
+    #footer1 {
+        width: 20%;
+    }
+
+    #footer1 h2 {
+        font-size: 18px;
+    }
+
+    #footer1 h3 {
+        font-size: 11px;
+    }
+
+    #footer2 {
+        width: 30%;
+    }
+
+    #footer2 h3 {
+        font-size: 10px;
+    }
+
+    #footer2 img {
+        height: 20px;
+        width: 20px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .bgMobile {
+
+        height: 200px;
+        background-size: 400px;
+
+    }
+
+    .bgMobile2 {
+
+        height: 200px;
+        background-size: 400px;
+
+    }
+
+    .bgMobile3 {
+
+        height: 200px;
+        background-size: 400px;
+
+    }
+}
